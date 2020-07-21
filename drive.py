@@ -52,7 +52,6 @@ def send_control(steering_angle, throttle):
 
 #augmented backend
 #finished batch generator
-
 if __name__ == '__main__':
     model = load_model('model.h5')
     app = socketio.Middleware(sio, app)
