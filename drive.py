@@ -10,6 +10,7 @@ from io import BytesIO
 from PIL import Image
 import cv2
 
+
 sio = socketio.Server()
 
 sio = socketio.Server()
@@ -23,6 +24,8 @@ def img_preprocess(img):
     img = cv2.resize(img, (200, 66))
     img = img/255
     return img
+
+
 
 
 @sio.on('telemetry')
